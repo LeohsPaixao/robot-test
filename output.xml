@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-14T16:59:01.487254" rpa="false" schemaversion="5">
+<suite id="s1" name="Modelo" source="/home/leopaixao/documents/projects/robot-test/modelo.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o Site Google" line="11">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-14T16:59:01.694564" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-14T16:59:01.693242" elapsed="3.833121"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:59:01.692221" elapsed="3.834607"/>
+</kw>
+<status status="PASS" start="2024-05-14T16:59:01.691395" elapsed="3.836344"/>
+</test>
+<status status="PASS" start="2024-05-14T16:59:01.494306" elapsed="4.035227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Modelo">Modelo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
