@@ -1,72 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-15T10:09:56.351804" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-15T14:12:50.665727" rpa="false" schemaversion="5">
 <suite id="s1" name="Modelo" source="/home/leopaixao/documents/projects/robot-test/tests/modelo.robot">
-<test id="s1-t1" name="Cenário 1: Acessando o Site Google" line="24">
-<kw name="Abrir Site">
+<test id="s1-t1" name="Cenário 1: Tela principal do bugbank" line="16">
+<kw name="Fazer login no sistema do bugbank" owner="login" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-15T10:09:56.531435" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2024-05-15T14:12:50.841038" level="INFO">Opening browser 'chrome' to base url 'https://bugbank.netlify.app/'.</msg>
 <arg>${url}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-15T10:09:56.530833" elapsed="3.897267"/>
-</kw>
-<status status="PASS" start="2024-05-15T10:09:56.529025" elapsed="3.899410"/>
-</kw>
-<status status="PASS" start="2024-05-15T10:09:56.527802" elapsed="3.901014"/>
-</test>
-<test id="s1-t2" name="Cenário 2: Pesquisando um assundo no Google" line="27">
-<kw name="Abrir Site">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-15T10:10:00.431617" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<arg>${url}</arg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-15T10:10:00.431095" elapsed="3.716559"/>
-</kw>
-<status status="PASS" start="2024-05-15T10:10:00.430498" elapsed="3.717447"/>
-</kw>
-<kw name="Pesquisar">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-15T10:10:04.149973" level="INFO">Clicking element 'xpath://textarea[@id='APjFqb']'.</msg>
-<arg>xpath://textarea[@id='APjFqb']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-15T10:10:04.149298" elapsed="0.109659"/>
+<status status="PASS" start="2024-05-15T14:12:50.840533" elapsed="3.257894"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-15T10:10:04.259747" level="INFO">Typing text 'Lionel Messi' into text field 'id:APjFqb'.</msg>
-<arg>id:APjFqb</arg>
-<arg>${search}</arg>
+<msg time="2024-05-15T14:12:54.099941" level="INFO">Typing text 'leoteste@email.com' into text field 'name:email'.</msg>
+<arg>name:email</arg>
+<arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-15T10:10:04.259332" elapsed="0.142150"/>
+<status status="PASS" start="2024-05-15T14:12:54.098974" elapsed="0.180622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-15T14:12:54.280207" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-15T14:12:54.279888" elapsed="0.135879"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-15T10:10:04.402145" level="INFO">Clicking element 'css:input.gNO89b'.</msg>
-<arg>css:input.gNO89b</arg>
+<msg time="2024-05-15T14:12:54.416981" level="INFO">Clicking element 'class:otUnI'.</msg>
+<arg>class:otUnI</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-15T10:10:04.401892" elapsed="0.256145"/>
+<status status="PASS" start="2024-05-15T14:12:54.416336" elapsed="0.084610"/>
 </kw>
-<status status="PASS" start="2024-05-15T10:10:04.148483" elapsed="0.510031"/>
+<status status="PASS" start="2024-05-15T14:12:50.839391" elapsed="3.661883"/>
 </kw>
-<kw name="Validar a Pesquisa">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${result}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-15T10:10:04.660920" elapsed="1.574043"/>
+<kw name="Test">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>teste</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-15T14:12:54.502902" elapsed="0.000553"/>
 </kw>
-<status status="PASS" start="2024-05-15T10:10:04.659464" elapsed="1.575689"/>
+<status status="PASS" start="2024-05-15T14:12:54.501942" elapsed="0.002152"/>
 </kw>
-<status status="PASS" start="2024-05-15T10:10:00.429501" elapsed="5.805909"/>
+<status status="PASS" start="2024-05-15T14:12:50.838323" elapsed="3.666618"/>
 </test>
-<status status="PASS" start="2024-05-15T10:09:56.352717" elapsed="9.883846"/>
+<status status="PASS" start="2024-05-15T14:12:50.666875" elapsed="3.846198"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Modelo">Modelo</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Modelo">Modelo</stat>
 </suite>
 </statistics>
 <errors>
