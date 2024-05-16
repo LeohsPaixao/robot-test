@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Resources/login.robot
+Resource    ../resources/keywords/keywords.robot
 Library    SeleniumLibrary
 Library    String
 Test Setup    Fazer login no sistema do bugbank

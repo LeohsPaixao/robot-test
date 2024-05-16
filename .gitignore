@@ -172,3 +172,6 @@ pyrightconfig.json
 
 .vscode
 *.png
+
+results/logs
+results/output.xml
