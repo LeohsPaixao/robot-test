@@ -5,9 +5,12 @@ Resource    ../variables/variables.robot
 
 *** Keywords ***
 
-Fazer login no sistema do bugbank
+Ir para o Site
     Open Browser    ${url}    ${BROWSER}
+
+Fazer login no Product Store
     Set Selenium Speed    ${DELAY}
-    Input Text    name:email    ${email}
-    Input Text    name:password    ${password}
-    Click Element    class:otUnI
+    Click Element    id:signin2
+    Input Text    id:sign-username    ${email}
+    Input Text    id:sign-password    ${password}
+    Click Element    css:.btn-primary

@@ -1,7 +1,7 @@
 *** Variables ***
-${email}    leoteste@email.com
+${email}    leoteste
 ${password}    123456
-${url}    https://bugbank.netlify.app/
+${url}    https://www.demoblaze.com/
 ${BROWSER}    chrome
-${DELAY}    0.1
+${DELAY}    3
 
