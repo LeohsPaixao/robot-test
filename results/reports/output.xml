@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-09-11T13:30:19.618441" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cases" source="/home/leopaixao/documents/projects/robot-test/tests/test_cases">
+<suite id="s1-s1" name="Homepage" source="/home/leopaixao/documents/projects/robot-test/tests/test_cases/homepage.robot">
+<test id="s1-s1-t1" name="Cenário 1: Validando a tela inicial" line="9">
+<kw name="Ir para o Site" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:19.848797" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-11T13:30:19.848325" elapsed="3.896003"/>
+</kw>
+<status status="PASS" start="2024-09-11T13:30:19.847131" elapsed="3.897632"/>
+</kw>
+<kw name="Validar a pagina inicial do site">
+<msg time="2024-09-11T13:30:23.751185" level="FAIL">No keyword with name 'Validar a pagina inicial do site' found.</msg>
+<status status="FAIL" start="2024-09-11T13:30:23.750991" elapsed="0.000345">No keyword with name 'Validar a pagina inicial do site' found.</status>
+</kw>
+<status status="FAIL" start="2024-09-11T13:30:19.846131" elapsed="3.905903">No keyword with name 'Validar a pagina inicial do site' found.</status>
+</test>
+<test id="s1-s1-t2" name="Cenário 2: Colocando um produto no carrinho" line="12">
+<kw name="Ir para o Site" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:23.756392" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-11T13:30:23.755672" elapsed="4.409335"/>
+</kw>
+<status status="PASS" start="2024-09-11T13:30:23.754831" elapsed="4.410386"/>
+</kw>
+<kw name="Selecionar o primeiro produto">
+<msg time="2024-09-11T13:30:28.171339" level="FAIL">No keyword with name 'Selecionar o primeiro produto' found.</msg>
+<status status="FAIL" start="2024-09-11T13:30:28.171158" elapsed="0.000286">No keyword with name 'Selecionar o primeiro produto' found.</status>
+</kw>
+<kw name="Colocar no carrinho o produto selecionado">
+<status status="NOT RUN" start="2024-09-11T13:30:28.172115" elapsed="0.000172"/>
+</kw>
+<status status="FAIL" start="2024-09-11T13:30:23.753400" elapsed="4.419775">No keyword with name 'Selecionar o primeiro produto' found.</status>
+</test>
+<status status="FAIL" start="2024-09-11T13:30:19.644006" elapsed="8.530542"/>
+</suite>
+<suite id="s1-s2" name="Login" source="/home/leopaixao/documents/projects/robot-test/tests/test_cases/login.robot">
+<test id="s1-s2-t1" name="Cenário 1: Fazendo login no site" line="9">
+<kw name="Ir para o Site" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:28.188902" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-11T13:30:28.188412" elapsed="4.061050"/>
+</kw>
+<status status="PASS" start="2024-09-11T13:30:28.187722" elapsed="4.062000"/>
+</kw>
+<kw name="Fazer login no Product Store" owner="keywords">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-09-11T13:30:32.251258" elapsed="0.000782"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:32.253254" level="INFO">Clicking element 'id:signin2'.</msg>
+<arg>id:signin2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-11T13:30:32.252443" elapsed="6.115235"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:38.368392" level="INFO">Typing text 'leoteste' into text field 'id:sign-username'.</msg>
+<arg>id:sign-username</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-11T13:30:38.368021" elapsed="9.176580"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:47.545327" level="INFO">Typing text '123456' into text field 'id:sign-password'.</msg>
+<arg>id:sign-password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-11T13:30:47.544888" elapsed="9.146351"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-11T13:30:56.692066" level="INFO">Clicking element 'css:.btn-primary'.</msg>
+<msg time="2024-09-11T13:31:03.010755" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-11T13:31:03.011068" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.76)
+Stacktrace:
+#0 0x559450ed1e3a &lt;unknown&gt;
+#1 0x559450bbb2a1 &lt;unknown&gt;
+#2 0x559450c0870f &lt;unknown&gt;
+#3 0x559450bfc0ff &lt;unknown&gt;
+#4 0x559450c2a4b2 &lt;unknown&gt;
+#5 0x559450bfba79 &lt;unknown&gt;
+#6 0x559450c2a67e &lt;unknown&gt;
+#7 0x559450c492cc &lt;unknown&gt;
+#8 0x559450c2a253 &lt;unknown&gt;
+#9 0x559450bfa1c7 &lt;unknown&gt;
+#10 0x559450bfab3e &lt;unknown&gt;
+#11 0x559450e9827b &lt;unknown&gt;
+#12 0x559450e9c327 &lt;unknown&gt;
+#13 0x559450e84dae &lt;unknown&gt;
+#14 0x559450e9cdf2 &lt;unknown&gt;
+#15 0x559450e6974f &lt;unknown&gt;
+#16 0x559450ec1128 &lt;unknown&gt;
+#17 0x559450ec12fb &lt;unknown&gt;
+#18 0x559450ed0f6c &lt;unknown&gt;
+#19 0x7fa6449a4ac3 &lt;unknown&gt;
+</msg>
+<arg>css:.btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-11T13:30:56.691772" elapsed="6.321061">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.76)
+Stacktrace:
+#0 0x559450ed1e3a &lt;unknown&gt;
+#1 0x559450bbb2a1 &lt;unknown&gt;
+#2 0x559450c0870f &lt;unknown&gt;
+#3 0x559450bfc0ff &lt;unknown&gt;
+#4 0x559450c2a4b2 &lt;unknown&gt;
+#5 0x559450bfba79 &lt;unknown&gt;
+#6 0x559450c2a67e &lt;unknown&gt;
+#7 0x559450c492cc &lt;unknown&gt;
+#8 0x559450c2a253 &lt;unknown&gt;
+#9 0x559450bfa1c7 &lt;unknown&gt;
+#10 0x559450bfab3e &lt;unknown&gt;
+#11 0x559450e9827b &lt;unknown&gt;
+#12 0x559450e9c327 &lt;unknown&gt;
+#13 0x559450e84dae &lt;unknown&gt;
+#14 0x559450e9cdf2 &lt;unknown&gt;
+#15 0x559450e6974f &lt;unknown&gt;
+#16 0x559450ec1128 &lt;unknown&gt;
+#17 0x559450ec12fb &lt;unknown&gt;
+#18 0x559450ed0f6c &lt;unknown&gt;
+#19 0x7fa6449a4ac3 &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2024-09-11T13:30:32.250329" elapsed="30.762842">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.76)
+Stacktrace:
+#0 0x559450ed1e3a &lt;unknown&gt;
+#1 0x559450bbb2a1 &lt;unknown&gt;
+#2 0x559450c0870f &lt;unknown&gt;
+#3 0x559450bfc0ff &lt;unknown&gt;
+#4 0x559450c2a4b2 &lt;unknown&gt;
+#5 0x559450bfba79 &lt;unknown&gt;
+#6 0x559450c2a67e &lt;unknown&gt;
+#7 0x559450c492cc &lt;unknown&gt;
+#8 0x559450c2a253 &lt;unknown&gt;
+#9 0x559450bfa1c7 &lt;unknown&gt;
+#10 0x559450bfab3e &lt;unknown&gt;
+#11 0x559450e9827b &lt;unknown&gt;
+#12 0x559450e9c327 &lt;unknown&gt;
+#13 0x559450e84dae &lt;unknown&gt;
+#14 0x559450e9cdf2 &lt;unknown&gt;
+#15 0x559450e6974f &lt;unknown&gt;
+#16 0x559450ec1128 &lt;unknown&gt;
+#17 0x559450ec12fb &lt;unknown&gt;
+#18 0x559450ed0f6c &lt;unknown&gt;
+#19 0x7fa6449a4ac3 &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2024-09-11T13:30:28.186826" elapsed="34.826873">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.76)
+Stacktrace:
+#0 0x559450ed1e3a &lt;unknown&gt;
+#1 0x559450bbb2a1 &lt;unknown&gt;
+#2 0x559450c0870f &lt;unknown&gt;
+#3 0x559450bfc0ff &lt;unknown&gt;
+#4 0x559450c2a4b2 &lt;unknown&gt;
+#5 0x559450bfba79 &lt;unknown&gt;
+#6 0x559450c2a67e &lt;unknown&gt;
+#7 0x559450c492cc &lt;unknown&gt;
+#8 0x559450c2a253 &lt;unknown&gt;
+#9 0x559450bfa1c7 &lt;unknown&gt;
+#10 0x559450bfab3e &lt;unknown&gt;
+#11 0x559450e9827b &lt;unknown&gt;
+#12 0x559450e9c327 &lt;unknown&gt;
+#13 0x559450e84dae &lt;unknown&gt;
+#14 0x559450e9cdf2 &lt;unknown&gt;
+#15 0x559450e6974f &lt;unknown&gt;
+#16 0x559450ec1128 &lt;unknown&gt;
+#17 0x559450ec12fb &lt;unknown&gt;
+#18 0x559450ed0f6c &lt;unknown&gt;
+#19 0x7fa6449a4ac3 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" start="2024-09-11T13:30:28.177251" elapsed="34.837333"/>
+</suite>
+<status status="FAIL" start="2024-09-11T13:30:19.619562" elapsed="43.396386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Test Cases">Test Cases</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Homepage">Test Cases.Homepage</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Login">Test Cases.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
