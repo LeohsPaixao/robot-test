@@ -1,7 +1,7 @@
 *** Variables ***
 ${email}    leoteste
 ${password}    123456
-${url}    https://www.demoblaze.com/
+${URL}    http://the-internet.herokuapp.com/
 ${BROWSER}    chrome
 ${DELAY}    3
 
