@@ -7,23 +7,19 @@ clean:
 	@rm -rf $(OUTPUT_DIR)
 	@mkdir -p $(OUTPUT_DIR)
 
-test-all: 
-	clean
+test-all: clean
 	@echo "Executando testes com Robot Framework..."
 	robot --outputdir $(OUTPUT_DIR) $(TESTS_DIR)
 
-test-scenario: 
-	clean
+test-scenario: clean
 	@echo "Executando testes com a tag específica..."
 	robot --outputdir $(OUTPUT_DIR) --include $(TAG) $(TESTS_DIR)
 
-test-file: 
-	clean
+test-file: clean
 	@echo "Executando arquivo específico..."
 	robot --outputdir $(OUTPUT_DIR) $(FILE_PATH)
 
-test-args: 
-	clean
+test-args: clean
 	@echo "Executando testes com Robot Framework usando arquivo de argumentos..."
 	robot --outputdir $(OUTPUT_DIR) -A $(ARG_FILE) $(TESTS_DIR)
 
