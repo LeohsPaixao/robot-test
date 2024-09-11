@@ -1,12 +1,19 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    String
-Resource    ../variables/variables.robot
+
+*** Variables ***
+${email}    leoteste
+${password}    123456
+${URL}    http://the-internet.herokuapp.com/
+${BROWSER}    headlesschrome
+${DELAY}    3
 
 *** Keywords ***
 
 Open the browser
-    Open Browser    ${url}    ${BROWSER}
+    [Arguments]    ${URL}
+    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
 
 Out the browser

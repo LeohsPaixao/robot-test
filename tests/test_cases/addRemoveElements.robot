@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ../resources/keywords/keywords.robot
-Test Setup    Open the browser
+Resource    ../resources/keywords.resource
+Test Setup    Open the browser    ${URL}
 Test Teardown    Out the browser
 
 *** Test Cases ***
