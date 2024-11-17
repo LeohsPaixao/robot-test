@@ -5,7 +5,7 @@ Test Teardown    Out the browser
 
 *** Test Cases ***
 
-Cenário 1: Verificar Imagens Quebradas
-    [Tags]  brokenImagesTest01
-    Broken Images Page
-    Verify Broken Images
+Cenário 1: Marcar E Validar Checkbox
+    [Tags]    checkboxTest
+    Checkbox Page
+    Marked the First Checkbox

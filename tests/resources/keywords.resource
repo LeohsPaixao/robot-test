@@ -7,7 +7,7 @@ Library    String
 ${email}    leoteste
 ${password}    123456
 ${URL}    http://the-internet.herokuapp.com/
-${BROWSER}    headlesschrome
+${BROWSER}    chrome
 ${DELAY}    3
 
 *** Keywords ***
@@ -32,6 +32,10 @@ Add and Remove Elements Page
 Broken Images Page
     Click Link   Broken Images
     Page Should Contain    Broken Images
+
+Checkbox Page
+    Click Link    Checkboxes
+    Page Should Contain    Checkboxes
 
 Sign in with valid credentials
     Input Text    username    tomsmith
@@ -66,3 +70,8 @@ Verify url Image
     [Arguments]    ${URL}
     ${resposta}    GET    ${URL}
     Should Be Equal As Numbers    ${resposta.status_code}    200
+
+Marked the First Checkbox
+    Select Checkbox    (//input[@type="checkbox"])[1]
+    ${status}    Get Element Attribute    (//input[@type="checkbox"])[1]    checked
+    Should Be Equal As Strings    ${status}    true
