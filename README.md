@@ -56,6 +56,8 @@ Certifique-se de ter o Python instalado na versão correta. Recomenda-se o uso d
 
 ## Como Executar os Testes
 
+Este projeto utiliza Makefile para facilitar a execução de testes do Robot Framework!
+
 ### Executar Todos os Testes
 
 Para rodar todos os testes e gerar relatórios no diretório `results/reports`:
