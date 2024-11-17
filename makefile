@@ -25,8 +25,8 @@ test-args: clean
 
 help:
 	@echo "Comandos disponíveis:"
-	@echo "  make test-all     - Executa os testes e salva os relatórios em $(OUTPUT_DIR)"
 	@echo "  make clean        - Limpa os relatórios antigos"
+	@echo "  make test-all     - Executa os testes e salva os relatórios em $(OUTPUT_DIR)"
 	@echo "  make test-args    - Executa os testes usando o arquivo de argumentos $(ARG_FILE)"
 	@echo "  make test-scenario TAG=<tag> - Executa um teste específico"
 	@echo "  make test-file FILE_PATH=<path> - Executa um arquivo específico"
