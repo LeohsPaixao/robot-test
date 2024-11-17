@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    RequestsLibrary
 Library    String
 
 *** Variables ***
@@ -28,6 +29,10 @@ Add and Remove Elements Page
     Page Should Contain    Add/Remove Elements
     Page Should Contain Button    xpath://button[contains(., 'Add Element')]
 
+Broken Images Page
+    Click Link   Broken Images
+    Page Should Contain    Broken Images
+
 Sign in with valid credentials
     Input Text    username    tomsmith
     Input Text    password    SuperSecretPassword!
@@ -48,3 +53,16 @@ Remove Element from Page
     Add New Element to Page
     Click Button    xpath://button[contains(., 'Delete')]
     Element Should Not Be Visible    xpath=//div[@id='elements']/button[contains(., 'Delete')]
+
+Verify Broken Images
+    ${imagens}    Get WebElements    //img
+    FOR    ${imagem}    IN    @{imagens}
+        ${src}    Get Element Attribute    ${imagem}    src
+        Log    Verificando imagem com URL: ${src}
+        Run Keyword If    '${src}' != ''    Verify url Image    ${src}
+    END
+
+Verify url Image
+    [Arguments]    ${URL}
+    ${resposta}    GET    ${URL}
+    Should Be Equal As Numbers    ${resposta.status_code}    200
