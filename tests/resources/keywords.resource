@@ -7,7 +7,7 @@ Library    String
 ${email}    leoteste
 ${password}    123456
 ${URL}    http://the-internet.herokuapp.com/
-${BROWSER}    chrome
+${BROWSER}    headlesschrome
 ${DELAY}    3
 
 *** Keywords ***
