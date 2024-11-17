@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  robote-test-ci:
     runs-on: ubuntu-latest
 
     steps:
